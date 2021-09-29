@@ -4,18 +4,17 @@ sidebar_position: 2
 
 # Authentication
 
-We are providing two different options for authentification. The first one is [OAuth access token](#get-an-oauth-access-token) which is used to get authenticated and scoped access to any MobilePay merchant account. Use them when your application accesses resources on behalf of account owners. I.e. you are an integrator. Second option is [API keys](#get-an-api-key). They are used to get unlimited access to resources in your merchant account. But firstly, we need to onboard app payments product.
+We are providing two different options for authentification. The first one is [OAuth access token](#get-an-oauth-access-token) which is used to get authenticated and scoped access to any MobilePay merchant account. Use them when your application will access resources on behalf of multiple MobilePay merchant accounts, i.e. you are an integrator. Second option is [API keys](#get-an-api-key). They are used to get unlimited access to resources in your merchant account. But first, you need to onboard your app in our developer portal.
 
-## Onboarding App Payments application
+## Creating an App in developer portal
 
 1. **Log-in on the developer portal**. Go to [developer portal](https://developer.mobilepay.dk/) and log in with your credentials.
 
-2. **Create an app in the developer portal**. Go to My Apps > Create new App to register a new application. You need to supply the x-ibm-client-id when calling APIs. You should always store the x-ibm-client-id in a secure location, and never reveal it publicly.
+2. **Create an app in the developer portal**. Go to My Apps > Create new App to register a new application. You need to supply the `x-ibm-client-id` when calling APIs. You should always store the `x-ibm-client-id` in a secure location, and never reveal it publicly.
 
-3. **Subscribe the app to APIs.** Go to APIs and subscribe to APIs you need, e.g.:
-    * PaymentPoints API
-    * Payments API
-    * Refunds API
+3. **Subscribe the app to products.** Go to your app and subscribe to the following:
+    * Payments
+    * Webhooks
 
 ## Get an OAuth access token
 
@@ -33,7 +32,7 @@ Your API keys carry many privileges, so be sure to keep them secure! Do not shar
 
 :::
 
-You can view and manage your API keys in the [Production MobilePay portal](https://admin.mobilepay.dk/). Meanwhile, sandbox keys are generated in the [Sandbox MobilePay portal](https://sandprod-admin.mobilepay.dk/) and will be applicable only on sandbox environment.
+You can view and manage your API keys in the [MobilePay portal](https://admin.mobilepay.dk/). Meanwhile, sandbox keys are generated in the [sandbox version of MobilePay portal](https://sandprod-admin.mobilepay.dk/) and will be applicable only on sandbox environment.
 
 When creating an API key you need to select APIs which will be accessible using this key. You can also assign it a name. Once API key is generated, it is not  possible to change the scope or the name. Modifications must be carried out by creating a new API key. Lastly, you are fully responsible for managing the lifecycle of the keys you have created.
 
