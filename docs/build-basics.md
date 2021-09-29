@@ -73,3 +73,15 @@ Our logo acts as a unique signature - a symbol and identifier for MobilePay. It�
 
 Consistent use of our logo helps build trust and recognition across markets, and in all situations. Use it with care. And respect.
 You can find resources and guidelines [here](https://developer.mobilepay.dk/design).
+
+## Valid characters
+
+Valid characters for request fields are:
+
+* 0 - 9
+* a-zA-Z
+* æÆøØåÅ
+* äÄöÖšŠžŽâÂàÀáÁãÃéÉêÊëËèÈíÍîÎïÏìÌüÜûÛùÙúÚôÔòÒóÓõÕÿýÝñÑ
+* !#$%&'()*+,-./:;<=>?@[]^_`{|}~¦¯¨´
+* «»ðþçß¤ÇµÐÞ±°ªº©§¶¼½¾¬®¢£¥¡¿¹²³
+* (space)
