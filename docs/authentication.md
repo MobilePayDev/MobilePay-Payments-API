@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # Authentication
 
-We are providing two different options for authentification. The first one is [OAuth access token](#get-an-oauth-access-token) which is used to get authenticated and scoped access to any MobilePay merchant account. Use them when your application will access resources on behalf of multiple MobilePay merchant accounts, i.e. you are an integrator. Second option is [API keys](#get-an-api-key). They are used to get unlimited access to resources in your merchant account. But first, you need to onboard your app in our developer portal.
+We are providing two different options for authentification. The first one is [OAuth](#get-an-oauth-access-token) which is used to get authenticated and scoped access to any MobilePay merchant account. Use them when your application will access resources on behalf of multiple MobilePay merchant accounts, i.e. you are an integrator. Second option is [API keys](#get-an-api-key). They are used to get unlimited access to resources in your merchant account. But first, you need to onboard your app in our developer portal.
 
 ## Creating an App in developer portal
 
