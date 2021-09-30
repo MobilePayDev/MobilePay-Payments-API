@@ -76,7 +76,7 @@ You can find resources and guidelines [here](https://developer.mobilepay.dk/desi
 
 ## Valid characters
 
-Valid characters for request fields are:
+Valid characters for string type request fields are:
 
 * 0 - 9
 * a-zA-Z

@@ -204,23 +204,6 @@ class AppDelegate: NSObject, UIApplicationDelegate {
 </TabItem>
 </Tabs>
 
-:::tip Experimental Feature for a pilot period.
-
-When redirecting back to your app, MobilePay appends a query parameter `status` to the end of a deep link. It can contain these values:
-
-- successful
-- failed
-- rejected
-
-If this returned `status` value is `successful`, you can trigger a capture without additional check for payment's state. 
-
-This feature is experimental during a pilot period, so do not rely solely on it and still continue to check if payment was reserved. 
-We are looking for your feedback during a pilot period if this brings value to your implementation having this experimental functionality.
-
-P.S. It's not required for a successful app payments integration.
-
-:::
-
 ## All done
 
 Now everything should be ready for testing! Sandbox testing guide is [here](/docs/testing).

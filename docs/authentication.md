@@ -8,11 +8,11 @@ We are providing two different options for authentification. The first one is [O
 
 ## Creating an App in developer portal
 
-1. **Log-in on the developer portal**. Go to [developer portal](https://developer.mobilepay.dk/) and log in with your credentials.
+1. **Log-in to developer portal**. Go to [developer portal](https://developer.mobilepay.dk/) and log in with your credentials.
 
 2. **Create an app in the developer portal**. Go to My Apps > Create new App to register a new application. You need to supply the `x-ibm-client-id` when calling APIs. You should always store the `x-ibm-client-id` in a secure location, and never reveal it publicly.
 
-3. **Subscribe the app to products.** Go to your app and subscribe to the following:
+3. **Subscribe the app to products.** Go to the "APIs" section and subscribe to the following api products:
     * Payments
     * Webhooks
 
@@ -41,8 +41,8 @@ When creating an API key you need to select APIs which will be accessible using 
 ## Usage
 
 To perform successfull authorization provide:
-* **API_Key** - generated as described before (OAth access token or Api key)
-* **client_id** - acquired in [developer portal](https://developer.mobilepay.dk/developersupport/openid/) by going to My Apps page.
+* **API_Key** - generated as described before (OAuth access token or Api key)
+* **client_id** - acquired in [developer portal](https://developer.mobilepay.dk/application/) by going to My Apps page.
 
 ```jsx
 -H "Authorization: Bearer {API_Key}"
