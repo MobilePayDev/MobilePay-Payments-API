@@ -20,7 +20,7 @@ Creating, editing payment points is done in _MobilePay Portal_. The payment poin
 
 ## Retrieve a list of payment points
 
-In order to get the details of payment points like `PaymentPointId`, you need to call Payment Points Api. The following request retrieves information about all the payment points for a merchant account usable with Payments product.
+In order to get the details of payment points like `PaymentPointId`, you need to use Payment Points API. The following request retrieves information about all payment points for a merchant account usable with Payments API.
 
 ```bash title="Retrieve all payment points"
 curl https://api.mobilepay.dk/v1/paymentpoints \
