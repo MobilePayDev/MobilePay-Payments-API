@@ -38,8 +38,7 @@ All webhook notifications from MobilePay include an `x-mobilepay-signature heade
 Example pseudocode that generates signature:
 
 ```js
-var hmac = new HMACSHA1(signatureKey);
-var signature = hmac
+var signature = new HMACSHA1(signatureKey)
   .computeHash(notificationUrl + notificationBody.removeWhitespace())
   .toBase64();
 ```
