@@ -44,6 +44,7 @@ If any client errors occur, our endpoints return an error object describing the 
 | invalid_payment_state   | Payment has not been captured yet and cannot be refunded. |
 | idempotency_key_reused   | Different request parameters already used for the same idempotencyKey - {_idempotencyKey_}. |
 | unauthorized_access   | Authorization error occurred. |
+| availability_duration_expired   | It is no longer possible to refund this payment. |
 
 ### HTTP 400 Bad Request
 
