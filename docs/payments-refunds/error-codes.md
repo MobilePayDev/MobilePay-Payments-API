@@ -19,20 +19,20 @@ If any client errors occur, our endpoints return an error object describing the 
 
 #### Payments API
 
-| code               | message                                                                             |
-| -------------------| --------------------------------------------------------------------------------------- |
-| processing_error  | We were not able to process your request. Please try again or contact our support. |
-| amount_too_large  | Cannot capture a larger amount than is reserved. |
-| partial_capture_disallowed  | Partial capture is not allowed on this payment. |
-| payment_not_found  | Payment does not exist. |
-| invalid_payment_state   | Cannot cancel payment that is already captured. |
-| invalid_payment_state   | Only initiated payments can be cancelled by idempotency key. |
-| invalid_payment_state   | Only reserved payments can be captured. |
-| invalid_payment_point   | Payment point is not active. |
-| payment_point_not_found  | Payment point does not exist. |
-| idempotency_key_reused   | Different request parameters already used for the same idempotencyKey - {_idempotencyKey_}. |
-| unauthorized_access   | Authorization error occurred. |
-| payment_captured_with_different_amount   | Payment has already been captured with different amount. |
+| code               | message                                                                                                                               |
+| -------------------|---------------------------------------------------------------------------------------------------------------------------------------|
+| processing_error  | We were not able to process your request. Please try again or contact our support.                                                    |
+| amount_too_large  | Cannot capture a larger amount than is reserved.                                                                                      |
+| partial_capture_disallowed  | Partial capture is not allowed on this payment.                                                                                       |
+| payment_not_found  | Payment does not exist.                                                                                                               |
+| invalid_payment_state   | Cannot cancel payment that is already captured.                                                                                       |
+| invalid_payment_state   | Only initiated payments can be cancelled by idempotency key.                                                                          |
+| invalid_payment_state   | Only reserved payments can be captured.                                                                                               |
+| invalid_payment_point   | Payment point is not active.                                                                                                          |
+| payment_point_not_found  | Payment point does not exist.                                                                                                         |
+| idempotency_key_reused   | Different request parameters already used for the same idempotencyKey - {_idempotencyKey_}.                                           |
+| unauthorized_access   | Authorization error occurred.                                                                                                         |
+| payment_captured_with_different_amount   | Payment has already been captured with different amount. You can find more about this [here](/docs/payments-refunds/refund-payments). |
 
 #### Refunds API
 
