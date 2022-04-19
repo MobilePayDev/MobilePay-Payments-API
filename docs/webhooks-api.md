@@ -43,7 +43,7 @@ You can change the events by updating your webhooks configuration.
 | 7 | 16 minutes | 31.5 minutes |
 | 8 | 32 minutes | 63.5 minutes |
 | 9 | 64 minutes | 2 hours |
-| 10 - 31 | 120 minutes | 4 - 48 hours |
+| 10 - 32 | 120 minutes | 4 - 48 hours |
 
 \* Approximate values since retries are scheduled after delivery attempt which might take up to 10 seconds.
 
