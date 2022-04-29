@@ -37,7 +37,10 @@ Store your API keys private and secure and do not share with someone you don't t
 
  Keep in mind on securing keys: 
 * Do not leave API keys in publicly accessible areas such as GitHub, client-side code, etc.
-* Delete your API keys if you suspect that unauthorized persons know them. Note that deleting your API keys will not work. In that case, you will need to create new API keys and re-integrate.
+* Delete your API keys if you suspect that unauthorized people know them. Note that deleted API keys will not work. In that case, you will need to create new API keys and re-integrate.
+* Delete unneeded API keys to minimize your exposure to attack. Delete any API keys that you no longer need.
+* Regenerate your API keys periodically.
+* Restrict your API key only to APIs you are going to use.
 
 ### Get an API key
 You can view and manage your API keys in the [MobilePay portal](https://beta-admin.mobilepay.dk/settings/apikeys). Meanwhile, sandbox keys are generated in the [sandbox version of MobilePay portal](https://sandprod-beta-admin.mobilepay.dk/settings/apikeys) and will be applicable only on sandbox environment.
