@@ -37,7 +37,7 @@ Store your API keys private and secure and do not share with someone you don't t
 
  Keep in mind on securing keys: 
 * Do not leave API keys in publicly accessible areas such as GitHub, client-side code, etc.
-* Delete your API keys if you suspect that unauthorized people know them. Note that deleted API keys will not work. In that case, you will need to create new API keys and re-integrate.
+* Delete your API keys if you suspect that unauthorized people know them. Note that deleted API keys will not work. In that case, you will need to create new API keys and update authorization headers.
 * Delete old API keys you are no longer using to avoid any external exposure.
 * Regenerate your API keys periodically.
 * Restrict your API key only to APIs you are going to use.
