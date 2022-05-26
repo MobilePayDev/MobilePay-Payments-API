@@ -46,7 +46,7 @@ module.exports = {
     },
     prism: {
       theme: lightCodeTheme,
-			darkTheme: darkCodeTheme,
+      darkTheme: darkCodeTheme,
       additionalLanguages: ["java", "kotlin", "swift", "scala"],
     },
   },
