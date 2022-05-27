@@ -101,7 +101,11 @@ module.exports = {
         theme: {
           // Change with your site colors
           primaryColor: "#7b93ff",
-          options: { disableSearch: true },
+          options: {
+            disableSearch: true,
+            hideDownloadButton: true,
+            requiredPropsFirst: true
+          },
         },
       },
     ],
