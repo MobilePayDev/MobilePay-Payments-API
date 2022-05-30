@@ -32,7 +32,7 @@ Invoiced fees are not visible in the API.
 :::important
 
 This document does not represent all of the technical information about Reporting API.
-This information could be found here.
+This information could be found [here](TODO: TECH DOCUMENTATION).
 
 :::
 
