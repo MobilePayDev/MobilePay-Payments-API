@@ -52,7 +52,7 @@ paths:
               schema:
                 $ref: '#/components/schemas/ErrorResponse'
     get:
-      summary: fetch a collection of payments
+      summary: fetch a list of payments
       operationId: get-payments-list
       description: >
         Returns a list of all merchant's payments if no filters are provided in query parameters.
@@ -290,7 +290,7 @@ components:
       name: CorrelationId
       in: header
       required: false
-      description: correlation id used for logging (if you don't pass any value, we'll generate it)
+      description: Correlation id used for logging (if you don't pass any value, we'll generate it)
       schema:
         type: string
         format: uuid
