@@ -299,7 +299,7 @@ components:
       type: openIdConnect
       openIdConnectUrl: https://api.mobilepay.dk/merchant-authentication-openidconnect/.well-known/openid-configuration
       description: >-
-        Obtain a consent from your client (with scope `merchantpayments`), retrieve an acess token and send it in `Authorization` header using the Bearer scheme, 
+        Obtain a consent from your client (with scope `webhooks`), retrieve an acess token and send it in `Authorization` header using the Bearer scheme, 
         e.g., `Authorization: Bearer {access token}`
 security:
   - apiKey: []
