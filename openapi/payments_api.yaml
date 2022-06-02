@@ -91,10 +91,8 @@ paths:
                 - reserved
                 - captured
                 - cancelledByMerchant
-                - captureStarted
                 - cancelledByUser
                 - cancelledBySystem
-                - terminated
               type: string
         - name: startDate
           in: query
@@ -264,7 +262,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/CancelPaymentRequest'
+              $ref: '#/components/schemas/ReserveFundsRequest'
       responses:
         '204':
           description: No Content
@@ -425,10 +423,8 @@ components:
             - reserved
             - captured
             - cancelledByMerchant
-            - captureStarted
             - cancelledByUser
             - cancelledBySystem
-            - terminated
           type: string
           description: Indicates payment's current state.
           example: initiated
@@ -516,6 +512,22 @@ components:
           description: Deeplink to MobilePay app.
           example: >-
             mobilepay://merchant_payments?payment_id=186d2b31-ff25-4414-9fd1-bfe9807fa8b7
+    ReserveFundsRequest:
+      required:
+        - paymentSourceId
+        - userId
+      type: object
+      properties:
+        paymentSourceId:
+          type: string
+          format: uuid
+          description: The id of payment source which should be used to obtain funds.
+          example: 8b1def75-8f77-4a48-8924-bf2ab22251e6
+        userId:
+          type: string
+          format: uuid
+          description: The id of the user on whose behalf funds will be reserved.
+          example: be1e6d64-b73d-481a-9947-55e57ccbe4cf
   securitySchemes:
     apiKey:
       type: http

@@ -117,7 +117,6 @@ components:
           enum:
             - created
             - active
-            - deleted
           type: string
           description: The current state of the payment point.
           example: active
