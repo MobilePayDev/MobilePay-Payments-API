@@ -11,9 +11,10 @@ servers:
   - url: https://api.sandbox.mobilepay.dk
     description: Production server (uses **test** data)
 paths:
-  /api/v1/webhooks:
+  /v1/webhooks:
     get:
       summary: fetch all webhooks
+      operationId: get-webhooks-list
       responses:
         '200':
           description: OK
@@ -26,7 +27,8 @@ paths:
         '409':
           description: Conflict
     post:
-      summary: create webhook.
+      summary: create webhook
+      operationId: create-webhook
       requestBody:
         content:
           application/json:
@@ -45,9 +47,10 @@ paths:
           description: Unauthorized
         '409':
           description: Conflict
-  /api/v1/webhooks/{webhookid}:
+  /v1/webhooks/{webhookid}:
     put:
       summary: update webhook
+      operationId: update-webhook
       parameters:
         - name: webhookid
           in: path
@@ -79,6 +82,7 @@ paths:
           description: Conflict
     get:
       summary: fetch single webhook
+      operationId: get-webhook
       parameters:
         - name: webhookid
           in: path
@@ -103,6 +107,7 @@ paths:
           description: Conflict
     delete:
       summary: delete webhook
+      operationId: delete-webhook
       parameters:
         - name: webhookid
           in: path
@@ -122,6 +127,7 @@ paths:
   /v1/webhooks/{webhookid}/publishtestnotification:
     post:
       summary: publish test notification to a specified webhook
+      operationId: publish-test-notification
       parameters:
         - name: webhookid
           in: path

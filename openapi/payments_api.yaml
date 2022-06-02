@@ -151,7 +151,7 @@ paths:
           description: Not Found
         '409':
           description: Conflict
-  /api/v1/payments/{paymentid}/capture:
+  /v1/payments/{paymentid}/capture:
     parameters:
       - $ref: '#/components/parameters/correlationIdParam'
     post:

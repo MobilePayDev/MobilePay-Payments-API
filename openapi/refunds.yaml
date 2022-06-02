@@ -106,6 +106,7 @@ paths:
   /v1/refunds/{refundid}:
     get:
       summary: fetch single refund
+      operationId: get-refund
       parameters:
         - name: refundid
           in: path
