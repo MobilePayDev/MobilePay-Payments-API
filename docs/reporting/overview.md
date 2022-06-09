@@ -1,8 +1,3 @@
----
-sidebar_position: 1
----
-
-
 # Overview
 
 Reporting API allows you to query all activities taking place at any of your MobilePay payment locations.

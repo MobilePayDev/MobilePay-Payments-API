@@ -1,8 +1,4 @@
----
-sidebar_position: 4
----
-
-# Retrieve Transactions
+# Retrieve transactions
 
 ## Retrieve a list of transactions
 

@@ -29,6 +29,11 @@ module.exports = {
           to: '/docs/introduction',
         },
         {
+          label: 'Reporting',
+          position: 'left',
+          to: '/docs/reporting/overview',
+        },
+        {
           label: 'API references',
           position: 'left',
           items: [

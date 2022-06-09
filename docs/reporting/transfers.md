@@ -1,7 +1,4 @@
----
-sidebar_position: 5
----
-# Retrieve Transfers
+# Retrieve transfers
 
 :::note
 Usually accumulated payment point balance is transferred once per day to a specified merchant account.

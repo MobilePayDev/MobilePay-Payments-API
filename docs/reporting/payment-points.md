@@ -1,7 +1,3 @@
----
-sidebar_position: 3
----
-
 # Retrieve payment points
 
 This topic explains what payment points are and how to retrieve them.
