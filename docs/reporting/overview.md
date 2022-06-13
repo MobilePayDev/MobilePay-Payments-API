@@ -18,7 +18,7 @@ By using the API, you get a full list of all sales transactions and correspondin
 You can reconcile your accounts with a high degree of data and transparency, moving your business towards always having up-to-date financial overviews.
 
 :::note
-If you chose to have fees invoiced, then fees will not be deducted directly by MobilePay, and you instead you will need to reconcile against the invoices you receive.
+If you chose to have fees invoiced, then fees will not be deducted directly by MobilePay, and instead you will need to reconcile against the invoices you receive.
 **Invoiced fees are not visible in the API.**
 :::
 
@@ -27,7 +27,7 @@ If you chose to have fees invoiced, then fees will not be deducted directly by M
 :::important
 
 This document does not represent all of the technical information about Reporting API.
-This information could be found [here] **(TODO: TECH DOCUMENTATION)**.
+This information could be found [here](../../api/reporting).
 
 :::
 
@@ -38,7 +38,7 @@ MobilePay has different API products and each product has their own payment poin
 
 - In Subscriptions, `paymentPointId` is the same as `subscriptionProviderId`.
 
-- In Invoices, `paymentPointOd` is the same as `invoiceIssuerId`.
+- In Invoices, `paymentPointId` is the same as `invoiceIssuerId`.
 
 - In other products, it is the same.
 
