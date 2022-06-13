@@ -15,7 +15,7 @@ If any client errors occur, our endpoints return an error object describing the 
 
 ## Errors
 
-### HTTP 409 conflict
+### HTTP 409 Conflict
 
 #### Payments API
 
@@ -47,7 +47,7 @@ If any client errors occur, our endpoints return an error object describing the 
 | unauthorized_access   | Authorization error occurred. |
 | availability_duration_expired   | It is no longer possible to refund this payment.|
 
-### HTTP 400 bad request
+### HTTP 400 Bad Request
 
 | code               | message                                                                             |
 | -------------------| --------------------------------------------------------------------------------------- |
