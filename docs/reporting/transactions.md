@@ -2,7 +2,7 @@
 
 ## Retrieve a list of transactions
 
-Returns a report of all sales transactions for a given merchant.
+Returns a report of all transactions.
 
 :::caution
 Data provided by this endpoint represents the latest known state at the time of the query. Resubmitting your request might yield different results if additional transactions have occurred during the time between requests.

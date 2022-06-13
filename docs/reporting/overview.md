@@ -2,10 +2,9 @@
 
 Reporting API allows you to query all transactions taking place at any of your MobilePay payment locations (payment points).
 
-The main objective is to make it easier for you to do reconciliation on your side. We at MobilePay will provide details of transactions to help you with that, with the products that MobilePay offers. This will be done by summarizing payment, fees, refunds. These are summarized in further detail below.
-
+The main objective is to make it easier for you to do reconciliation on your side. We at MobilePay will provide you a detailed list of transactions (payments, fees, refunds) to help with that.
 :::info
-Reporting API let's you fetch transactions from **all products** offered by MobilePay:
+Reporting API lets you fetch transactions from **all products** offered by MobilePay:
 
 - App payments
 - Subscriptions
@@ -38,7 +37,7 @@ If you chose to have fees invoiced, then fees will not be deducted directly by M
 :::important
 
 This document does not represent all of the technical information about Reporting API.
-This information could be found [here](../../api/reporting).
+This information can be found [here](../../api/reporting).
 
 :::
 
