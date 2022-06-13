@@ -44,7 +44,7 @@ This information can be found [here](../../api/reporting).
 :::note Payment Point Id
 
 When using the Reporting API, you will be introduced to the term `paymentPointId` - uuid assigned to every payment point.
-MobilePay has different API products and each product has their own payment points. Payment point might named differently across products.
+MobilePay has different API products and each product has their own payment points. `paymentPointId` might be named differently across products:
 
 - In Subscriptions, `paymentPointId` is the same as `subscriptionProviderId`.
 
