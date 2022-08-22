@@ -147,7 +147,7 @@ curl https://api.mobilepay.dk/v1/payments/{PAYMENT_ID}/capture \
 ```
 
 :::danger
-If you receive 5xx response while capturing the payment most likely ended up in **captureStarted** state. You have to retry the capture in such case until you get either 2xx or 4xx. The capture call is idempotent.
+If you receive 5xx response while capturing the reservation then that most likely means the payment ended up in **captureStarted** state. You have to retry the capture in such case until you get either 2xx or 4xx. The capture call is idempotent.
 :::
 
 ## Cancel payment
