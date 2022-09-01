@@ -70,14 +70,12 @@ paths:
           in: query
           schema:
             type: string
-            format: date
-            example: 2021-11-30
+            format: date-time
         - name: enddate
           in: query
           schema:
             type: string
-            format: date
-            example: 2021-11-30
+            format: date-time
         - name: pagesize
           in: query
           description: Number of transactions to be returned.
