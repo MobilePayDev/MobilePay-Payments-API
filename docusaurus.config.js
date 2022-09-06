@@ -34,7 +34,7 @@ module.exports = {
       },
       items: [   
         {
-          label: 'App payments',
+          label: 'App Payments',
           position: 'left',
           to: '/docs/app-payments/introduction',
         },
@@ -108,6 +108,8 @@ module.exports = {
           anonymizeIP: true, // Should IPs be anonymized?
         },
         docs: {
+          routeBasePath: 'docs',
+          path: 'docs',
           sidebarPath: require.resolve("./sidebars.js")
         },
         theme: {
@@ -147,6 +149,16 @@ module.exports = {
           },
         },
       },
+    ],
+  ],
+  plugins: [
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'docs-extra',
+        path: 'docs-extra',
+        routeBasePath: 'docs-extra',
+      }, 
     ],
   ],
 }
