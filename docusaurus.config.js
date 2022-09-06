@@ -30,13 +30,13 @@ module.exports = {
         alt: "MobilePay",
         src: "img/logo-blue.svg",
         srcDark: "img/logo-white.svg",
-        href: "/MobilePay-Payments-API/docs/introduction",
+        href: "/MobilePay-Payments-API/docs/app-payments/introduction",
       },
       items: [   
         {
           label: 'App payments',
           position: 'left',
-          to: '/docs/introduction',
+          to: '/docs/app-payments/introduction',
         },
         {
           label: 'Online',
@@ -86,6 +86,11 @@ module.exports = {
     footer: {
       style: "dark",
       copyright: `Copyright © ${new Date().getFullYear()} MobilePay. Built with Docusaurus.`,
+    },
+    docs: {
+      sidebar: {
+        autoCollapseCategories: true,
+      },
     },
     prism: {
       theme: lightCodeTheme,
