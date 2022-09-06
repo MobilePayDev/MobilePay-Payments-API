@@ -1,3 +1,7 @@
+---
+sidebar_position: 4
+---
+
 # MobilePay Checkout best practice
 
 MobilePay Checkout lets webshops offer their customers a faster and easier purchase flow by linking payment and delivery details.

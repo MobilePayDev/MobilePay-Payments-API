@@ -1,3 +1,7 @@
+---
+sidebar_position: 3
+---
+
 # Checkout
 
 With MobilePay Checkout webshops can offer their customers to complete purchases even faster by linking payment and delivery details. When using Checkout MobilePay will supply you with the billing address and optionally the delivery address of the customer. When initiating a Checkout payment the user will then be prompted to choose address before accepting the payment in the MobilePay app.
