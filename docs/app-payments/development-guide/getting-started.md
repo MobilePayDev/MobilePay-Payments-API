@@ -8,7 +8,7 @@ You will be starting off in the Sandbox. Its purpose is to give developers a shi
 
 ## Step 1 - Register
 
-All merchants should order the product needed on the MobilePay portal [here](https://admin.mobilepay.dk/). If you are a Third Party integrator and don't have an agreement with MobilePay sign up [here](https://www.mobilepaygroup.com/partner/signup). When the sign up have been approved by our business representatives we will contact your technical contact in order to start the integration process.
+All merchants should order the product needed on the MobilePay portal [here](https://admin.mobilepay.dk/). If you are a Third Party integrator and don't have an agreement with MobilePay you can sign up [here](https://www.mobilepaygroup.com/partner/signup). When the sign up have been approved by our business representatives we will contact your technical contact in order to start the integration process.
 
 ## Step 2 - API documentation
 
