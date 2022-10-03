@@ -14,7 +14,7 @@ Preparing proper error handling of payments is extremely important since communi
 
 ## Use of Description
 
-We highly recommend that you use the description parameter to inform your customers to a greater extent. Description will be shown on the payment confirmation screen in MobilePay, so the customer has more information about the product, that they have purchased. The description will also be shown when the MobilePay user opens their payment receipt in the activity list.
+We highly recommend that you use the description parameter to inform your customers to a greater extent. Description will be shown on the payment confirmation screen in MobilePay, so the customer has more information about the product(s) they have purchased. The description will also be shown when the MobilePay user opens their payment receipt in the activity list.
 
 ## Sandbox verification
 
