@@ -11,7 +11,4 @@ Documentation found here will cover a specific set of MobilePay APIs ([Payments 
 
 ![App Payments hero](/img/Hero_AppS.jpg)
 
-With MobilePay App Payments you can offer your customers easier and faster payments when purchasing goods or services in apps. If you want to learn more about the business side of our App Payments solution you can read more here:
-Danish: https://mobilepay.dk/erhverv/apps-og-webshops/mobilepay-app-betalinger
-Finnish: https://mobilepay.fi/yrityksille/sovellukset-ja-verkkokaupat/mobilepay-app-payments
-
+With MobilePay App Payments you can offer your customers easier and faster payments when purchasing goods or services in apps. If you want to learn more about the business side of our App Payments solution you can read more here: ([Danish](https://mobilepay.dk/erhverv/apps-og-webshops/mobilepay-app-betalinger)/([Finnish](https://mobilepay.fi/yrityksille/sovellukset-ja-verkkokaupat/mobilepay-app-payments)
