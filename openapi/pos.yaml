@@ -73,7 +73,7 @@ tags:
       Payments API makes it easy to initiate and complete a payment
   - name: Point Of Sales
     description:
-      POS description
+      Point Of Sales (POS) API makes it easy to create a POS and associate it to a Store
   - name: Stores
     description:
       Stores API makes it easy for you query stores and get detailed information.
@@ -117,11 +117,6 @@ paths:
             type: string
             description: The payment ID to query
             format: uuid
-        - name: CorrelationId
-          in: header
-          description: CorrelationId used for logging
-          schema:
-            type: string
         - name: Authorization
           in: header
           description: Integrator's bearer token
@@ -231,11 +226,6 @@ paths:
             type: string
             description: Filter payments to those with this state.
             nullable: true
-        - name: CorrelationId
-          in: header
-          description: CorrelationId used for logging
-          schema:
-            type: string
         - name: Authorization
           in: header
           description: Integrator's bearer token
@@ -291,11 +281,6 @@ paths:
       summary: Initiates a new payment.
       operationId: InitiatePayment
       parameters:
-        - name: CorrelationId
-          in: header
-          description: CorrelationId used for logging
-          schema:
-            type: string
         - name: Authorization
           in: header
           description: Integrator's bearer token
@@ -442,11 +427,6 @@ paths:
       description: "The payment will need to be marked as ready with a `POST /payments/{paymentId}/ready`.\r\nInformation like the payment amount, currency code, potential restrictions, etc, needs to be provided later, when the ready request is sent."
       operationId: PreparePayment
       parameters:
-        - name: CorrelationId
-          in: header
-          description: CorrelationId used for logging
-          schema:
-            type: string
         - name: Authorization
           in: header
           description: Integrator's bearer token
@@ -572,11 +552,6 @@ paths:
             type: string
             description: The payment to mark as ready
             format: uuid
-        - name: CorrelationId
-          in: header
-          description: CorrelationId used for logging
-          schema:
-            type: string
         - name: Authorization
           in: header
           description: Integrator's bearer token
@@ -712,11 +687,6 @@ paths:
             type: string
             description: The payment to capture
             format: uuid
-        - name: CorrelationId
-          in: header
-          description: CorrelationId used for logging
-          schema:
-            type: string
         - name: Authorization
           in: header
           description: Integrator's bearer token
@@ -828,11 +798,6 @@ paths:
             type: string
             description: The payment to cancel
             format: uuid
-        - name: CorrelationId
-          in: header
-          description: CorrelationId used for logging
-          schema:
-            type: string
         - name: Authorization
           in: header
           description: Integrator's bearer token
@@ -912,11 +877,6 @@ paths:
             type: string
             description: The ID of the point of sale
             format: uuid
-        - name: CorrelationId
-          in: header
-          description: CorrelationId used for logging
-          schema:
-            type: string
         - name: Authorization
           in: header
           description: Integrator's bearer token
@@ -1000,11 +960,6 @@ paths:
             type: string
             description: The point of sale to delete
             format: uuid
-        - name: CorrelationId
-          in: header
-          description: CorrelationId used for logging
-          schema:
-            type: string
         - name: Authorization
           in: header
           description: Integrator's bearer token
@@ -1089,11 +1044,6 @@ paths:
             type: string
             description: Restricts query to PoSs with this merchant PoS ID
             nullable: true
-        - name: CorrelationId
-          in: header
-          description: CorrelationId used for logging
-          schema:
-            type: string
         - name: Authorization
           in: header
           description: Integrator's bearer token
@@ -1149,11 +1099,6 @@ paths:
       summary: Creates a point of sale.
       operationId: CreatePos
       parameters:
-        - name: CorrelationId
-          in: header
-          description: CorrelationId used for logging
-          schema:
-            type: string
         - name: Authorization
           in: header
           description: Integrator's bearer token
@@ -1308,11 +1253,6 @@ paths:
             type: string
             description: The point of sale
             format: uuid
-        - name: CorrelationId
-          in: header
-          description: CorrelationId used for logging
-          schema:
-            type: string
         - name: Authorization
           in: header
           description: Integrator's bearer token
@@ -1391,11 +1331,6 @@ paths:
             type: string
             description: The store ID
             format: uuid
-        - name: CorrelationId
-          in: header
-          description: CorrelationId used for logging
-          schema:
-            type: string
         - name: Authorization
           in: header
           description: Integrator's bearer token
@@ -1474,11 +1409,6 @@ paths:
             type: string
             description: Restricts query to stores with this merchant location ID
             nullable: true
-        - name: CorrelationId
-          in: header
-          description: CorrelationId used for logging
-          schema:
-            type: string
         - name: Authorization
           in: header
           description: Integrator's bearer token
@@ -1549,11 +1479,6 @@ paths:
             type: string
             description: Restricts query to stores with this merchant location ID
             nullable: true
-        - name: CorrelationId
-          in: header
-          description: CorrelationId used for logging
-          schema:
-            type: string
         - name: Authorization
           in: header
           description: Integrator's bearer token
@@ -1618,11 +1543,6 @@ paths:
             type: string
             description: Refund identifier
             format: uuid
-        - name: CorrelationId
-          in: header
-          description: CorrelationId used for logging
-          schema:
-            type: string
         - name: Authorization
           in: header
           description: Integrator's bearer token
@@ -1707,11 +1627,6 @@ paths:
             description: Restricts refunds returned to those that belongs to this paymentId
             format: uuid
             nullable: true
-        - name: CorrelationId
-          in: header
-          description: CorrelationId used for logging
-          schema:
-            type: string
         - name: Authorization
           in: header
           description: Integrator's bearer token
@@ -1769,11 +1684,6 @@ paths:
       summary: Create a refund (a payment can be refunded multiple times, the sum of the refunds cannot exceed the full amount of the payment)
       operationId: CreateRefund
       parameters:
-        - name: CorrelationId
-          in: header
-          description: CorrelationId used for logging
-          schema:
-            type: string
         - name: Authorization
           in: header
           description: Integrator's bearer token
@@ -1903,11 +1813,6 @@ paths:
             type: string
             description: Refund identifier
             format: uuid
-        - name: CorrelationId
-          in: header
-          description: CorrelationId used for logging
-          schema:
-            type: string
         - name: Authorization
           in: header
           description: Integrator's bearer token
@@ -1991,11 +1896,6 @@ paths:
             type: string
             description: Refund identifier
             format: uuid
-        - name: CorrelationId
-          in: header
-          description: CorrelationId used for logging
-          schema:
-            type: string
         - name: Authorization
           in: header
           description: Integrator's bearer token
@@ -2074,12 +1974,6 @@ paths:
           description: This endpoint is only available in sandbox environment.
       summary: Checks in user at PoS.
       operationId: UserSimulationCheckin
-      parameters:
-        - name: CorrelationId
-          in: header
-          description: CorrelationId used for logging
-          schema:
-            type: string
       requestBody:
         description: The information needed to check in a user to a pos.
         content:
@@ -2132,12 +2026,6 @@ paths:
           description: This endpoint is only available in sandbox environment.
       summary: Accepts payment on behalf of a user.
       operationId: UserSimulationAcceptPayment
-      parameters:
-        - name: CorrelationId
-          in: header
-          description: CorrelationId used for logging
-          schema:
-            type: string
       requestBody:
         description: The information needed to accept a payment on a users behalf.
         content:
@@ -2190,12 +2078,6 @@ paths:
           description: This endpoint is only available in sandbox environment.
       summary: Cancels active payment on behalf of a user.
       operationId: UserSimulationCancelPayment
-      parameters:
-        - name: CorrelationId
-          in: header
-          description: CorrelationId used for logging
-          schema:
-            type: string
       requestBody:
         description: The information needed to cancel a payment on a users behalf.
         content:
