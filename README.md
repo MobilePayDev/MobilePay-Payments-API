@@ -1,1 +1,1 @@
-This repository contains source for app payments documentation page. It is hosted [here](https://mobilepaydev.github.io/MobilePay-Payments-API/docs/app-payments)
+Please don't contribute to this repository, it's obsolete. Go and contribute [here](https://github.com/MobilePayDev/MobilePayDev.github.io).
