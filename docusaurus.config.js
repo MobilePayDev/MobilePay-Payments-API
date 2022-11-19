@@ -30,80 +30,16 @@ module.exports = {
         alt: "MobilePay",
         src: "img/logo-blue.svg",
         srcDark: "img/logo-white.svg",
-        href: "/MobilePay-Payments-API/",
+        href: "https://developer.mobilepay.dk/",
       },
       items: [   
         {
-          label: 'App Payments',
+          label: 'MobilePay Developer Documentation',
           position: 'left',
-          to: '/docs/app-payments/',
+          to: 'https://developer.mobilepay.dk/',
         },
         {
-          label: 'Invoice',
-          position: 'left',
-          to: '/docs/invoice',
-        },
-        {
-          label: 'Online',
-          position: 'left',
-          to: '/docs/online',
-        },
-        {
-          label: 'Point of Sale',
-          position: 'left',
-          to: '/docs/pos',
-        },
-        {
-          label: 'Subscriptions',
-          position: 'left',
-          to: '/docs/subscriptions',
-        },
-        {
-          label: 'Reporting',
-          position: 'left',
-          to: '/docs/reporting',
-        },
-        {
-          label: 'API references',
-          position: 'left',
-          items: [
-            {
-              label: 'App payments',
-              to: '/api/app-payments',
-            },
-            {
-              label: 'Webhooks',
-              to: '/api/wehooks',
-            },
-            {
-              label: 'Invoice',
-              to: '/api/invoice',
-            },
-            {
-              label: 'Online',
-              to: '/api/online',
-            },
-            {
-              label: 'PoS',
-              to: '/api/pos',
-            },
-            {
-              label: 'Subscriptions',
-              to: '/api/subscriptions',
-            },
-            {
-              label: 'Reporting (v3)',
-              to: '/api/reporting',
-            },
-          ],
-        },
-        {
-          label: "Support",
-          to: '/docs/support',
-          position: "right",
-        },
-        {
-          href: "https://github.com/MobilePayDev/MobilePay-Payments-API",
+          href: "https://github.com/MobilePayDev/MobilePayDev.github.io",
           label: "GitHub",
           position: "right",
         },
